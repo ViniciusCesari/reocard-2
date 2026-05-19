@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reocard - Apoyo Cardiovascular Natural</title>
+    <style>
+        /* CSS focado em conversão e usabilidade (Mobile First) */
+        body { 
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #f4f7f6; 
+            color: #333; 
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 20px auto; 
+            background: #ffffff; 
+            padding: 30px; 
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+        }
+        h1, h2 { color: #2c3e50; }
+        .hero { 
+            text-align: center; 
+            padding-bottom: 20px; 
+            border-bottom: 1px solid #eee; 
+        }
+        .hero h1 { 
+            font-size: 26px; 
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 25px;
+        }
+        .product-section { 
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: center; 
+            align-items: center; 
+            gap: 30px; 
+            margin: 30px 0; 
+        }
+        /* Classe adaptada para a tag <img> real */
+        .product-image {
+            width: 100%;
+            max-width: 350px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            object-fit: cover;
+        }
+        .pricing-box { 
+            background: #fffcf0; 
+            border: 2px dashed #f39c12; 
+            padding: 25px; 
+            border-radius: 10px; 
+            text-align: center; 
+            min-width: 280px;
+        }
+        .discount-badge { 
+            background: #f1c40f; 
+            color: #000; 
+            padding: 6px 12px; 
+            border-radius: 4px; 
+            font-weight: bold; 
+            font-size: 14px;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+        .price-old { 
+            text-decoration: line-through; 
+            color: #95a5a6; 
+            font-size: 18px; 
+        }
+        .price-new { 
+            color: #c0392b; 
+            font-size: 32px; 
+            font-weight: bold; 
+            display: block;
+            margin: 5px 0 15px 0;
+        }
+        .cta-btn { 
+            display: block; 
+            background-color: #27ae60; 
+            color: #ffffff; 
+            padding: 18px 20px; 
+            text-decoration: none; 
+            font-size: 18px; 
+            font-weight: bold; 
+            border-radius: 6px; 
+            text-align: center; 
+            transition: background 0.3s;
+            box-shadow: 0 4px 6px rgba(39, 174, 96, 0.3);
+        }
+        .cta-btn:hover { background-color: #2ecc71; }
+        .btn-note { font-size: 13px; color: #555; margin-top: 10px; display: block; }
+        .cod-alert { 
+            background: #e8f6f3; 
+            border-left: 6px solid #1abc9c; 
+            padding: 20px; 
+            margin: 30px 0; 
+            border-radius: 0 8px 8px 0;
+        }
+        .cod-alert h3 { margin: 0 0 10px 0; color: #16a085; font-size: 18px; display: flex; align-items: center;}
+        .cod-alert p { margin: 0; font-size: 15px; line-height: 1.5; }
+        .features { margin: 40px 0; }
+        .features ul { list-style: none; padding: 0; margin: 0; }
+        .features li { 
+            padding: 12px 0; 
+            border-bottom: 1px solid #eee; 
+            display: flex; 
+            align-items: flex-start; 
+            font-size: 16px;
+        }
+        .features li:last-child { border-bottom: none; }
+        .features li::before { 
+            content: '✓'; 
+            color: #27ae60; 
+            font-weight: bold; 
+            margin-right: 12px; 
+            font-size: 18px;
+        }
+        .bottom-cta { text-align: center; margin: 50px 0 20px 0; }
+        .footer { 
+            text-align: center; 
+            font-size: 12px; 
+            color: #7f8c8d; 
+            margin-top: 40px; 
+            padding-top: 20px; 
+            border-top: 1px solid #eee; 
+        }
+        .footer a { color: #7f8c8d; text-decoration: underline; margin: 0 10px; }
+        .disclaimer { 
+            font-size: 11px; 
+            margin-top: 15px; 
+            line-height: 1.4;
+            text-align: justify;
+        }
+        @media (max-width: 600px) {
+            .container { margin: 0; border-radius: 0; }
+            .product-section { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="hero">
+        <h1>Apoyo Natural para tu Bienestar Cardiovascular</h1>
+        <p class="subtitle">Descubre <strong>Reocard</strong>, el suplemento alimenticio formulado con ingredientes naturales cuidadosamente seleccionados.</p>
+        
+        <div class="product-section">
+            <img src="REOCARD.png" alt="Reocard Resveratrol" class="product-image">
+            
+            <div class="pricing-box">
+                <span class="discount-badge">¡PROMO 50% DE DESCUENTO!</span>
+                <div>Precio anterior: <span class="price-old">69.800 CLP</span></div>
+                <div class="price-new">34.900 CLP</div>
+                
+                <a href="https://brjb3.doctornutrplus.com/l" class="cta-btn">HACER PEDIDO AHORA</a>
+                <span class="btn-note">Pagas al recibir tu paquete en casa</span>
+            </div>
+        </div>
+
+        <div class="cod-alert">
+            <h3>📦 PAGO CONTRA ENTREGA (COD)</h3>
+            <p>Para tu máxima seguridad y comodidad, <strong>no necesitas usar tarjeta de crédito en línea</strong>. Simplemente realizas tu solicitud hoy y <strong>pagas en efectivo directamente al repartidor</strong> únicamente cuando tengas el producto en tus manos. ¡Compra 100% segura y libre de riesgos!</p>
+        </div>
+    </div>
+
+    <div class="features">
+        <h2>¿Por qué elegir la fórmula de Reocard?</h2>
+        <ul>
+            <li><strong>Ingredientes de Origen Natural:</strong> Contiene extractos de Algas, Ácido Fólico (Vitamina B9) y Ajo.</li>
+            <li><strong>Fórmula Limpia y Segura:</strong> Producto libre de organismos modificados genéticamente (NO GMO), sin conservantes artificiales ni sustancias químicas agresivas.</li>
+            <li><strong>Apoyo Continuo:</strong> Diseñado como suplemento alimenticio para apoyar el equilibrio del colesterol y el mantenimiento general del sistema cardiovascular.</li>
+        </ul>
+    </div>
+
+    <div class="bottom-cta">
+        <h2>Aprovecha la promoción antes de que termine</h2>
+        <div class="pricing-box" style="display: inline-block; text-align: center; max-width: 400px; width: 100%;">
+            <p style="margin-top:0;">Lleva Reocard con un <strong>50% de descuento</strong></p>
+            <div style="margin-bottom: 15px;">
+                <span class="price-old">69.800 CLP</span> &nbsp; 
+                <span style="color: #c0392b; font-size: 24px; font-weight: bold;">34.900 CLP</span>
+            </div>
+            <a href="https://brjb3.doctornutrplus.com/l" class="cta-btn">SOLICITAR CON DESCUENTO</a>
+            <span class="btn-note">Pagas al recibir tu paquete en casa</span>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div>
+            <a href="#">Política de Privacidad</a>
+            <a href="#">Términos y Condiciones</a>
+            <a href="#">Contacto</a>
+        </div>
+        <div class="disclaimer">
+            <strong>Descargo de responsabilidad importante:</strong> Este sitio web es un advertorial y tiene fines exclusivamente informativos. <strong>Reocard es un suplemento alimenticio, no es un medicamento.</strong> No está destinado a diagnosticar, tratar, curar ni prevenir ninguna enfermedad (incluyendo la hipertensión médica). Las declaraciones realizadas no han sido evaluadas por las autoridades sanitarias. Los resultados pueden variar de una persona a otra. Este producto no reemplaza el consejo médico profesional, diagnósticos o tratamientos. Consulte siempre a su médico antes de iniciar cualquier nueva suplementación o si tiene problemas de presión arterial.
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
